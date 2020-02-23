@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/brriann.github.io/static/css/main.d1b05096.chunk.css",
+    "main.js": "/brriann.github.io/static/js/main.5d9021bd.chunk.js",
+    "main.js.map": "/brriann.github.io/static/js/main.5d9021bd.chunk.js.map",
+    "runtime-main.js": "/brriann.github.io/static/js/runtime-main.4c6d8f7d.js",
+    "runtime-main.js.map": "/brriann.github.io/static/js/runtime-main.4c6d8f7d.js.map",
+    "static/js/2.27bd20b4.chunk.js": "/brriann.github.io/static/js/2.27bd20b4.chunk.js",
+    "static/js/2.27bd20b4.chunk.js.map": "/brriann.github.io/static/js/2.27bd20b4.chunk.js.map",
+    "index.html": "/brriann.github.io/index.html",
+    "precache-manifest.ad82432470eab2ded758c4eb095cf713.js": "/brriann.github.io/precache-manifest.ad82432470eab2ded758c4eb095cf713.js",
+    "service-worker.js": "/brriann.github.io/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/brriann.github.io/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.27bd20b4.chunk.js.LICENSE.txt": "/brriann.github.io/static/js/2.27bd20b4.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/brriann.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c6d8f7d.js",
+    "static/js/2.27bd20b4.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.5d9021bd.chunk.js"
+  ]
+}
