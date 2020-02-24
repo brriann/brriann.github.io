@@ -84,7 +84,7 @@ function App() {
           <span>
             <a
             className="App-link"
-            href="https://github.com/brriann/brriann.github.io"
+            href="https://github.com/brriann/algs-ds"
             target="_blank"
             rel="noopener noreferrer"
             >
