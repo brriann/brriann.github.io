@@ -88,7 +88,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             >
-              algs-ds repo
+              algs-ds
             </a>
           </span>
         </p>
