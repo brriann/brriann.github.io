@@ -1,9 +1,15 @@
-.App {
+.ezApp {
   text-align: center;
+  background-color: #282c34;
 }
 
-.App-header {
-  background-color: #282c34;
+.ezAppContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.ezAppHeader {
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,14 +19,6 @@
   color: white;
 }
 
-.App-header p {
+.ezAppHeader p {
   margin: 8px
-}
-
-.App-link-list span {
-  padding: 5px;
-}
-
-.App-link {
-  color: #61dafb;
 }

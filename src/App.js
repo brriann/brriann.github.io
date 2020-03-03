@@ -1,98 +1,51 @@
 import React from 'react';
 import './App.css';
 
+import FlexRowButton from './components/parent/FlexRowButton.js'
+import './components/parent/FlexRowButton.css'
+
+
+const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfostdev.net'];
+const repos = ['algs-ds', 'langs', 'func', 'homelab', 'brriann.github.io'];
+
+const baseUrl = 'https://github.com/brriann/'
+const urlPrefix = 'http://'
+
+const builtLinks = links.map(link => ({ href: urlPrefix + link, text: link }));
+const builtRepos = repos.map(repo => ({ href: baseUrl + repo, text: repo }));
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="ezApp">
+      <div className="ezAppContainer">
+      <header className="ezAppHeader">
         <p>
           Welcome to brriann.github.io.
         </p>
         <p>
-          This is a collection of projects with some technical discussion included.
+          This is a collection of projects. Most are ongoing. 
+        </p>
+        
+        <p>View in a repository:</p>
+        <p>
+          <FlexRowButton
+            children={builtRepos}
+          />
+        </p>
+        <p>Or visit in a browser:</p>
+        <p>
+        <FlexRowButton
+            children={builtLinks}
+          />
         </p>
         <p>
-          Many are in flux, so please check back often.
-        </p>
-        <p>Visit in a browser:</p>
-        <p className="App-link-list">
-          <span>
-            <a
-            className="App-link"
-            href="https://fantasy.ski"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              fantasy.ski
-            </a>
-          </span>
-          <span>
-            <a
-            className="App-link"
-            href="http://keydev.us"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              keydev.us
-            </a>
-          </span>
-          <span>
-            <a
-            className="App-link"
-            href="http://floatapp.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              floatapp.net
-            </a>
-          </span>
-          <span>
-            <a
-            className="App-link"
-            href="http://bfostdev.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              bfostdev.com
-            </a>
-          </span>
-          <span>
-            <a
-            className="App-link"
-            href="http://bfostdev.net"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              bfostdev.net
-            </a>
-          </span>
+          brriann.github.io is a simple React app.
         </p>
         <p>
-          Or view in a repository:
-        </p>
-        <p className="App-link-list">
-        <span>
-            <a
-            className="App-link"
-            href="https://github.com/brriann/brriann.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              brriann.github.io
-            </a>
-          </span>
-          <span>
-            <a
-            className="App-link"
-            href="https://github.com/brriann/algs-ds"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-              algs-ds
-            </a>
-          </span>
+        My goal is to establish an easy React template to re-use on future projects.
         </p>
       </header>
+      </div>
     </div>
   );
 }
