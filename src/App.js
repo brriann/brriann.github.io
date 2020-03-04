@@ -42,7 +42,7 @@ function App() {
           brriann.github.io is a simple React app.
         </p>
         <p>
-        My goal is to establish an easy React template to re-use on future projects.
+        My goal is to make a UI template that's easy to reuse. 
         </p>
       </header>
       </div>

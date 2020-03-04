@@ -5,17 +5,14 @@
 }
 
 .btnSmall {
-    width: 150px;
     padding: 10px 5px;
 }
 
 .btnMed {
-    width: 200px;
     padding: 20px 10px;
     margin: 5px;
 }
 
 .btnLarge {
-    width: 300px;
     padding: 30px 15px;
 }
