@@ -20,10 +20,10 @@ function App() {
       <div className="ezAppContainer">
       <header className="ezAppHeader">
         <p>
-          Welcome to brriann.github.io.
+          Welcome to brriann.github.io...
         </p>
         <p>
-          This is a collection of projects. Most are ongoing. 
+          This is a collection of ongoing projects. 
         </p>
         
         <p>View in a repository:</p>
@@ -42,7 +42,7 @@ function App() {
           brriann.github.io is a simple React app.
         </p>
         <p>
-        My goal is to establish an easy React template to re-use on future projects.
+        My goal is to establish an easy React template for reuse on future projects.
         </p>
       </header>
       </div>
