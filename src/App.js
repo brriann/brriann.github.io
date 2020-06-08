@@ -6,7 +6,7 @@ import './components/parent/FlexRowButton.css'
 
 
 const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfostdev.net'];
-const repos = ['algs-ds', 'langs', 'func', 'homelab', 'brriann.github.io'];
+const repos = ['algs-ds', 'comparch', 'langs', 'func', 'homelab', 'brriann.github.io'];
 
 const baseUrl = 'https://github.com/brriann/'
 const urlPrefix = 'http://'
