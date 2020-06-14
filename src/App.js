@@ -4,7 +4,7 @@ import './App.css';
 import FlexRowButton from './components/parent/FlexRowButton.js'
 import './components/parent/FlexRowButton.css'
 
-
+const workRepos = ['mongo', 'postgres', 'aws', 'automation', 'dotnet', 'docker', 'angular', 'react'];
 const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfostdev.net'];
 const repos = ['algs-ds', 'comparch', 'langs', 'func', 'homelab', 'brriann.github.io'];
 
@@ -13,6 +13,9 @@ const urlPrefix = 'http://'
 
 const builtLinks = links.map(link => ({ href: urlPrefix + link, text: link }));
 const builtRepos = repos.map(repo => ({ href: baseUrl + repo, text: repo }));
+const builtWorkRepos = workRepos.map(workRepo => ({
+  href: baseUrl + workRepo, text: workRepo
+}));
 
 function App() {
   return (
@@ -23,9 +26,14 @@ function App() {
           Welcome to brriann.github.io...
         </p>
         <p>
-          This is a collection of ongoing projects. 
+          This is a collection of projects, coursework, and reference material.
         </p>
-        
+        <p>2020 full-time work:</p>
+        <p>
+          <FlexRowButton
+            children={builtWorkRepos}
+          />
+        </p>
         <p>View in a repository:</p>
         <p>
           <FlexRowButton
