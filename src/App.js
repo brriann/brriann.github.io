@@ -4,9 +4,10 @@ import './App.css';
 import FlexRowButton from './components/parent/FlexRowButton.js'
 import './components/parent/FlexRowButton.css'
 
-const workRepos = ['dotnet', 'tsql', 'apidev', 'aws', 'automation', 'docker', 'react'];
+const workRepos = ['dotnet', 'tsql', 'node', 'python', 'apidev', 'react'];
+const infraRepos = ['aws', 'azure', 'automation', 'docker', 'windows', 'linux'];
 const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfostdev.net'];
-const repos = ['algs-ds', 'comparch', 'langs', 'func', 'windows', 'linux', 'brriann.github.io'];
+const repos = ['algs-ds', 'cpp', 'comparch', 'langs', 'func', 'brriann.github.io'];
 
 const baseUrl = 'https://github.com/brriann/'
 const urlPrefix = 'https://'
@@ -16,6 +17,10 @@ const builtRepos = repos.map(repo => ({ href: baseUrl + repo, text: repo }));
 const builtWorkRepos = workRepos.map(workRepo => ({
   href: baseUrl + workRepo, text: workRepo
 }));
+const builtInfraRepos = infraRepos.map(infraRepo => ({
+  href: baseUrl + infraRepo, text: infraRepo
+}));
+
 
 function App() {
   return (
@@ -32,6 +37,11 @@ function App() {
         <p>
           <FlexRowButton
             children={builtWorkRepos}
+          />
+        </p>
+        <p>
+          <FlexRowButton
+            children={builtInfraRepos}
           />
         </p>
         <p>View in a repository:</p>
