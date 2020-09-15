@@ -4,9 +4,9 @@ import './App.css';
 import FlexRowButton from './components/parent/FlexRowButton.js'
 import './components/parent/FlexRowButton.css'
 
-const workRepos = ['mongo', 'postgres', 'aws', 'automation', 'dotnet', 'docker', 'angular', 'react'];
+const workRepos = ['dotnet', 'tsql', 'apidev', 'aws', 'automation', 'docker', 'react'];
 const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfostdev.net'];
-const repos = ['algs-ds', 'comparch', 'langs', 'func', 'homelab', 'brriann.github.io'];
+const repos = ['algs-ds', 'comparch', 'langs', 'func', 'windows', 'linux', 'brriann.github.io'];
 
 const baseUrl = 'https://github.com/brriann/'
 const urlPrefix = 'http://'
