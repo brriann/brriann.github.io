@@ -4,8 +4,8 @@ import './App.css';
 import FlexRowButton from './components/parent/FlexRowButton.js'
 import './components/parent/FlexRowButton.css'
 
-const workRepos = ['dotnet', 'tsql', 'node', 'python', 'apidev', 'react'];
-const infraRepos = ['aws', 'azure', 'automation', 'docker', 'windows', 'linux'];
+const workRepos = ['dotnet', 'tsql', 'nodejs', 'python', 'mongo', 'react'];
+const infraRepos = ['aws', 'azure', 'apidev', 'automation', 'docker', 'windows', 'linux'];
 const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfostdev.net'];
 const repos = ['algs-ds', 'cpp', 'comparch', 'langs', 'func', 'brriann.github.io'];
 
