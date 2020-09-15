@@ -9,7 +9,7 @@ const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfos
 const repos = ['algs-ds', 'comparch', 'langs', 'func', 'windows', 'linux', 'brriann.github.io'];
 
 const baseUrl = 'https://github.com/brriann/'
-const urlPrefix = 'http://'
+const urlPrefix = 'https://'
 
 const builtLinks = links.map(link => ({ href: urlPrefix + link, text: link }));
 const builtRepos = repos.map(repo => ({ href: baseUrl + repo, text: repo }));
