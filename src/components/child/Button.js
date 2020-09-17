@@ -4,10 +4,13 @@ import './Link.css';
 
 import Link from './Link.js';
 
+const buttonClassName = 'ezButton btnMed ';
+
 class Button extends Component {
     render() {
+        let highlightClassName = this.props.highlight ? 'highlight' : 'no-highlight';
         return (
-            <div className={this.props.className}>
+            <div className={buttonClassName + highlightClassName}>
                 <Link 
                     href={this.props.href}
                     text={this.props.text}

@@ -4,22 +4,74 @@ import './App.css';
 import FlexRowButton from './components/parent/FlexRowButton.js'
 import './components/parent/FlexRowButton.css'
 
-const workRepos = ['dotnet', 'tsql', 'nodejs', 'python', 'mongo', 'react'];
-const infraRepos = ['aws', 'azure', 'apidev', 'automation', 'docker', 'windows', 'linux'];
-const links = ['fantasy.ski', 'keydev.us', 'floatapp.net', 'bfostdev.com', 'bfostdev.net'];
-const repos = ['algs-ds', 'cpp', 'comparch', 'langs', 'func', 'brriann.github.io'];
+const workRepos = [
+  {'name': 'dotnet', 'highlight': true},
+  {'name': 'tsql', 'highlight': true},
+  {'name': 'nodejs', 'highlight': false},
+  {'name': 'python', 'highlight': false},
+  {'name': 'mongo', 'highlight': false},
+  {'name': 'react', 'highlight': true}
+];
+
+const infraRepos = [
+  {'name': 'aws', 'highlight': true},
+  {'name': 'azure', 'highlight': false},
+  {'name': 'apidev', 'highlight': false},
+  {'name': 'automation', 'highlight': false},
+  {'name': 'docker', 'highlight': true},
+  {'name': 'windows', 'highlight': true},
+  {'name': 'linux', 'highlight': true}
+];
+
+const links = [
+  {'name': 'fantasy.ski', 'highlight': false},
+  {'name': 'keydev.us', 'highlight': false},
+  {'name': 'floatapp.net', 'highlight': false},
+  {'name': 'bfostdev.com', 'highlight': true},
+  {'name': 'bfostdev.net', 'highlight': true}
+];
+
+const classRepos = [
+  {'name': 'algs-ds', 'highlight': true},
+  {'name': 'cpp', 'highlight': true},
+  {'name': 'comparch', 'highlight': true},
+  {'name': 'langs', 'highlight': false},
+  {'name': 'func', 'highlight': false},
+  {'name': 'os', 'highlight': false}
+];
+
+const projRepos = [
+  {'name': 'brriann.github.io', 'highlight': false},
+  {'name': 'node-rest', 'highlight': false},
+  {'name': 'django-rest', 'highlight': true},
+  {'name': 'react-redux', 'highlight': false},
+  {'name': 'mongo-express', 'highlight': false}
+];
 
 const baseUrl = 'https://github.com/brriann/'
 const urlPrefix = 'https://'
 
-const builtLinks = links.map(link => ({ href: urlPrefix + link, text: link }));
-const builtRepos = repos.map(repo => ({ href: baseUrl + repo, text: repo }));
-const builtWorkRepos = workRepos.map(workRepo => ({
-  href: baseUrl + workRepo, text: workRepo
-}));
-const builtInfraRepos = infraRepos.map(infraRepo => ({
-  href: baseUrl + infraRepo, text: infraRepo
-}));
+let repoBuilder = repo => ({
+  href: baseUrl + repo.name, 
+  text: repo.name, 
+  highlight: repo.highlight
+});
+
+let linkBuilder = link => ({
+  href: urlPrefix + link.name,
+  text: link.name,
+  highlight: link.highlight
+});
+
+const builtWorkRepos = workRepos.map(repoBuilder);
+
+const builtInfraRepos = infraRepos.map(repoBuilder);
+
+const builtLinks = links.map(linkBuilder);
+
+const builtClassRepos = classRepos.map(repoBuilder);
+
+const builtProjRepos = projRepos.map(repoBuilder);
 
 
 function App() {
@@ -31,9 +83,9 @@ function App() {
           Welcome to brriann.github.io...
         </p>
         <p>
-          This is a collection of projects, coursework, and reference material.
+          This is a collection of public repositories and live domains.
         </p>
-        <p>2020 full-time work:</p>
+        <p>2020 full-time work reference material:</p>
         <p>
           <FlexRowButton
             children={builtWorkRepos}
@@ -44,23 +96,23 @@ function App() {
             children={builtInfraRepos}
           />
         </p>
-        <p>View in a repository:</p>
+        <p>CS and mathematics classwork:</p>
         <p>
           <FlexRowButton
-            children={builtRepos}
+            children={builtClassRepos}
           />
         </p>
-        <p>Or visit in a browser:</p>
+        <p>Projects and template repos:</p>
+        <p>
+          <FlexRowButton
+            children={builtProjRepos}
+          />
+        </p>
+        <p>Live domains and resources:</p>
         <p>
         <FlexRowButton
             children={builtLinks}
           />
-        </p>
-        <p>
-          brriann.github.io is a simple React app.
-        </p>
-        <p>
-          My goal is to make a React template that's easy to reuse.
         </p>
       </header>
       </div>
