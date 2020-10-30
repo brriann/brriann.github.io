@@ -7,7 +7,7 @@ import './components/parent/FlexRowButton.css'
 const workRepos = [
   {'name': 'dotnet', 'highlight': true},
   {'name': 'tsql', 'highlight': true},
-  {'name': 'nodejs', 'highlight': false},
+  {'name': 'nodejs', 'highlight': true},
   {'name': 'python', 'highlight': false},
   {'name': 'mongo', 'highlight': false},
   {'name': 'react', 'highlight': true}
@@ -15,8 +15,8 @@ const workRepos = [
 
 const infraRepos = [
   {'name': 'aws', 'highlight': true},
-  {'name': 'azure', 'highlight': false},
-  {'name': 'apidev', 'highlight': false},
+  {'name': 'azure', 'highlight': true},
+  {'name': 'apidev', 'highlight': true},
   {'name': 'automation', 'highlight': false},
   {'name': 'docker', 'highlight': true},
   {'name': 'windows', 'highlight': true},
@@ -24,7 +24,7 @@ const infraRepos = [
 ];
 
 const links = [
-  {'name': 'fantasy.ski', 'highlight': false},
+  {'name': 'fantasy.ski', 'highlight': true},
   {'name': 'keydev.us', 'highlight': false},
   {'name': 'floatapp.net', 'highlight': false},
   {'name': 'bfostdev.com', 'highlight': true},
@@ -41,10 +41,10 @@ const classRepos = [
 ];
 
 const projRepos = [
-  {'name': 'brriann.github.io', 'highlight': false},
+  {'name': 'brriann.github.io', 'highlight': true},
   {'name': 'node-rest', 'highlight': false},
-  {'name': 'django-rest', 'highlight': true},
-  {'name': 'react-redux', 'highlight': false},
+  {'name': 'django-rest', 'highlight': false},
+  {'name': 'react-redux', 'highlight': true},
   {'name': 'mongo-express', 'highlight': false}
 ];
 
@@ -79,13 +79,7 @@ function App() {
     <div className="ezApp">
       <div className="ezAppContainer">
       <header className="ezAppHeader">
-        <p>
-          Welcome to brriann.github.io...
-        </p>
-        <p>
-          This is a collection of public repositories and live domains.
-        </p>
-        <p>2020 full-time work reference material:</p>
+        <p>2020 full-time reference material:</p>
         <p>
           <FlexRowButton
             children={builtWorkRepos}
@@ -96,13 +90,13 @@ function App() {
             children={builtInfraRepos}
           />
         </p>
-        <p>CS and mathematics classwork:</p>
+        <p>CS and math classwork:</p>
         <p>
           <FlexRowButton
             children={builtClassRepos}
           />
         </p>
-        <p>Projects and template repos:</p>
+        <p>Template projects:</p>
         <p>
           <FlexRowButton
             children={builtProjRepos}
