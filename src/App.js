@@ -44,7 +44,7 @@ const projRepos = [
   {'name': 'brriann.github.io', 'highlight': true},
   {'name': 'node-rest', 'highlight': false},
   {'name': 'django-rest', 'highlight': false},
-  {'name': 'react-redux', 'highlight': true},
+  {'name': 'reactredux', 'highlight': true},
   {'name': 'mongo-express', 'highlight': false}
 ];
 
