@@ -4,49 +4,15 @@ import './App.css';
 import FlexRowButton from './components/parent/FlexRowButton.js'
 import './components/parent/FlexRowButton.css'
 
-const workRepos = [
-  {'name': 'dotnet', 'highlight': true},
-  {'name': 'tsql', 'highlight': true},
-  {'name': 'nodejs', 'highlight': true},
-  {'name': 'python', 'highlight': false},
-  {'name': 'mongo', 'highlight': false},
-  {'name': 'react', 'highlight': true}
-];
+import {
+  workRepos, 
+  infraRepos, 
+  links, 
+  classRepos, 
+  projRepos
+} from './data.js';
 
-const infraRepos = [
-  {'name': 'aws', 'highlight': true},
-  {'name': 'azure', 'highlight': true},
-  {'name': 'apidev', 'highlight': true},
-  {'name': 'automation', 'highlight': false},
-  {'name': 'docker', 'highlight': true},
-  {'name': 'windows', 'highlight': true},
-  {'name': 'linux', 'highlight': true}
-];
 
-const links = [
-  {'name': 'fantasy.ski', 'highlight': true},
-  {'name': 'keydev.us', 'highlight': false},
-  {'name': 'floatapp.net', 'highlight': false},
-  {'name': 'bfostdev.com', 'highlight': true},
-  {'name': 'bfostdev.net', 'highlight': true}
-];
-
-const classRepos = [
-  {'name': 'algs-ds', 'highlight': true},
-  {'name': 'cpp', 'highlight': true},
-  {'name': 'comparch', 'highlight': true},
-  {'name': 'langs', 'highlight': false},
-  {'name': 'func', 'highlight': false},
-  {'name': 'os', 'highlight': false}
-];
-
-const projRepos = [
-  {'name': 'brriann.github.io', 'highlight': true},
-  {'name': 'node-rest', 'highlight': false},
-  {'name': 'django-rest', 'highlight': false},
-  {'name': 'reactredux', 'highlight': true},
-  {'name': 'mongo-express', 'highlight': false}
-];
 
 const baseUrl = 'https://github.com/brriann/'
 const urlPrefix = 'https://'
