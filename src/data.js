@@ -22,18 +22,19 @@ const work = [
   { 'name': 'azure', 'highlight': false },
   { 'name': 'apidev', 'highlight': false },
   { 'name': 'docker', 'highlight': false },
-  { 'name': 'redis', 'highlight': false },
   { 'name': 'automation', 'highlight': false },
 ];
 
 const interest = [
-  { 'name': 'finance', 'highlight': false },
   { 'name': 'nodejs', 'highlight': false },
   { 'name': 'python', 'highlight': false },
   { 'name': 'mongo', 'highlight': false },
   { 'name': 'aws', 'highlight': false },
+  { 'name': 'redis', 'highlight': false },
   { 'name': 'postgres', 'highlight': false },
   { 'name': 'd3', 'highlight': false },
+  { 'name': 'finance', 'highlight': false },
+  { 'name': 'fitness', 'highlight': false },
 ];
 
 // OLD SITE
