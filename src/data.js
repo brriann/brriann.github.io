@@ -34,7 +34,7 @@ const interest = [
   { 'name': 'postgres', 'highlight': false },
   { 'name': 'd3', 'highlight': false },
   { 'name': 'finance', 'highlight': false },
-  { 'name': 'fitness', 'highlight': false },
+  { 'name': 'wellness', 'highlight': false },
 ];
 
 // OLD SITE
