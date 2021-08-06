@@ -29,10 +29,9 @@ const interest = [
   { 'name': 'nodejs', 'highlight': false },
   { 'name': 'python', 'highlight': false },
   { 'name': 'mongo', 'highlight': false },
-  { 'name': 'aws', 'highlight': false },
-  { 'name': 'redis', 'highlight': false },
   { 'name': 'postgres', 'highlight': false },
-  { 'name': 'd3', 'highlight': false },
+  { 'name': 'aws', 'highlight': false },
+  { 'name': 'visual', 'highlight': false },
   { 'name': 'finance', 'highlight': false },
   { 'name': 'wellness', 'highlight': false },
 ];
